@@ -60,6 +60,9 @@ header .navbar .nav-link:hover {
 .feature_product .product_card {
   transition: all 0.3s ease;
 }
+.feature_product .product_card .card-title {
+  cursor: pointer;
+}
 .feature_product .product_card:hover {
   border: 1px solid var(--bs-primary);
 }
@@ -180,3 +183,178 @@ header .navbar .nav-link:hover {
   }
 }
 /* ===== Authentication Section CSS End */
+
+/* ===== Product Details CSS */
+.product_details {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .product_details {
+    padding: 60px 0;
+  }
+}
+.product_details .product_image {
+  max-height: 600px;
+  object-fit: cover;
+}
+.product_details .rating {
+  color: #ffc107;
+  font-size: 1.4rem;
+}
+.product_details .price {
+  font-size: 1.5rem;
+  color: #e63946;
+}
+.product_details .availability {
+  font-weight: 500;
+  color: green;
+}
+.product_details .option_label {
+  font-weight: 500;
+  margin-top: 15px;
+}
+.product_details .btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+.product_details .quantity input {
+  border-top: 1px solid #343a40;
+  border-bottom: 1px solid #343a40;
+}
+.product_details .quantity input:focus {
+  box-shadow: none !important  ;
+}
+.product_details .nav-tabs .nav-link {
+  color: #343a40;
+}
+.product_details .nav-tabs .nav-link.active {
+  color: #0d6efd;
+}
+/* ===== Product Details CSS End */
+
+/* ===== Wishlist CSS */
+.wishlist_section {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .wishlist_section {
+    padding: 60px 0;
+  }
+}
+.wishlist_section .wishlist_card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.wishlist_section .wishlist_card:hover {
+  transform: translateY(-4px);
+}
+.wishlist_section .rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+.wishlist_section .wishlist_img {
+  height: 250px;
+  object-fit: cover;
+}
+/* ===== Wishlist CSS End */
+
+/* ===== Profile CSS */
+.profile_section {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .profile_section {
+    padding: 60px 0;
+  }
+}
+.profile_section .sidebar {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.profile_section .profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile_section .tab-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  min-height: 380px;
+}
+.profile_section .nav-link {
+  text-align: left;
+  color: #343a40;
+}
+.profile_section .nav-link.active {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+.profile_section input:focus {
+  box-shadow: none !important  ;
+}
+/* ===== Profile CSS End */
+
+/* ===== Footer CSS */
+footer h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer li,
+footer a {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+footer ul li a {
+  color: #ddd;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+footer ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #ddd;
+  transition: color 0.3s ease, transform 0.2s;
+}
+
+footer .social-icons a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+footer .app-badges img {
+  max-width: 120px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+footer .app-badges img:hover {
+  transform: scale(1.05);
+}
+
+footer .footer_bottom {
+  font-size: 0.85rem;
+  color: #ddd;
+}
+/* ===== Footer CSS End */
