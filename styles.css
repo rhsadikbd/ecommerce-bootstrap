@@ -1,4 +1,182 @@
-.page-title {
-  height: 150px;
-  background-color: #007bff;
+/* ===== Navbar CSS */
+header .navbar .nav-item {
+  margin-left: 20px;
 }
+header .navbar .nav-link {
+  color: #fff;
+  opacity: 0.8;
+}
+header .navbar .nav-link.active,
+header .navbar .nav-link:hover {
+  opacity: 1;
+}
+/* ===== Navbar CSS End */
+
+/* ===== Slider CSS */
+.hero_slider .carousel .carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .hero_slider .carousel .carousel-item img {
+    height: 40vh;
+  }
+}
+/* ===== Slider CSS End */
+
+/* ===== Category CSS */
+.category_section {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .category_section {
+    padding: 60px 0;
+  }
+}
+.category_section .category_card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.category_section .category_card:hover {
+  transform: translateY(-5px);
+  background-color: var(--bs-primary-bg-subtle);
+}
+.category_section .category_icon {
+  font-size: 40px;
+  color: #0d6efd;
+}
+/* ===== Category CSS End */
+
+/* ===== Feature Product CSS */
+.feature_product {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .feature_product {
+    padding: 60px 0;
+  }
+}
+.feature_product .product_card {
+  transition: all 0.3s ease;
+}
+.feature_product .product_card:hover {
+  border: 1px solid var(--bs-primary);
+}
+.feature_product .product_card img {
+  height: 250px;
+  object-fit: cover;
+}
+.feature_product .card-title {
+  line-height: 1.5;
+}
+.feature_product .rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+.feature_product .sold {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+/* ===== Feature Product CSS End */
+
+/* ===== Just for You CSS */
+.just_for_you {
+  background-color: #ffffff;
+}
+/* ===== Just for You CSS End */
+
+/* ===== Page Title CSS */
+.page_title {
+  background-color: var(--bs-tertiary-bg);
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+/* ===== Page Title CSS End */
+
+/* ===== Cart Section CSS */
+.cart_section {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .cart_section {
+    padding: 60px 0;
+  }
+}
+
+.cart_section .form-control:focus {
+  box-shadow: none !important;
+}
+.cart_section table th:nth-child(2),
+.cart_section table th:nth-child(3),
+.cart_section table th:nth-child(4),
+.cart_section table th:nth-child(5) {
+  width: 10%;
+}
+/* ===== Cart Section CSS End */
+
+/* ===== Checkour Section CSS */
+.checkout_section {
+  padding: 100px;
+}
+@media (max-width: 768px) {
+  .checkout_section {
+    padding: 60px 0;
+  }
+}
+.checkout_section .form-control:focus {
+  box-shadow: none !important;
+}
+/* ===== Checkour Section CSS End */
+
+/* ===== Contact Section CSS */
+.contact_section {
+  padding: 100px 0;
+}
+.contact_section .form-control:focus {
+  box-shadow: none !important;
+}
+@media (max-width: 768px) {
+  .contact_section {
+    padding: 60px 0;
+  }
+}
+.contact_section .contact_info i {
+  font-size: 1.3rem;
+  color: #0d6efd;
+  margin-right: 10px;
+}
+
+/* ===== Contact Section CSS End */
+
+/* ===== Authentication Section CSS */
+.authentication_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bs-primary-bg-subtle);
+}
+.authentication_section .form-control:focus {
+  box-shadow: none !important;
+}
+.authentication_section .register_card {
+  width: 450px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  .authentication_section .register_card {
+    width: 100%;
+  }
+  .authentication_section {
+    padding: 0 15px;
+  }
+  .mt3 {
+    margin-top: 15px;
+  }
+}
+/* ===== Authentication Section CSS End */

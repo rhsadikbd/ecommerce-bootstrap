@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minimal E-Commerce</title>
+    <title>Simple eCommerce Website</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,92 +11,77 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light border-bottom mb-4"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">ShopNow</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cart.html">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+    <!-- ===== Navbar HTML -->
+    <header>
+      <nav class="navbar bg-primary navbar-expand-lg navbar-dark py-4">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">ShopNow</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="cart.html">Cart(3)</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+    <!-- ===== Navbar HTML End -->
 
-    <!-- Product Slider -->
-    <section class="container mb-5">
-      <h2 class="mb-4 text-center">Featured Products</h2>
-      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- ===== Slider HTML -->
+    <section class="hero_slider">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row justify-content-center">
-              <div class="col-md-4 text-center">
-                <img
-                  src="https://placehold.co/1200x400"
-                  class="d-block w-100 mb-3"
-                  alt="Product 1"
-                />
-                <h5>Product 1</h5>
-                <p>High-quality product description goes here.</p>
-              </div>
-            </div>
+            <img src="./images/banner.jpg" class="d-block w-100" alt="..." />
           </div>
-
           <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-4 text-center">
-                <img
-                  src="https://placehold.co/1200x400"
-                  class="d-block w-100 mb-3"
-                  alt="Product 2"
-                />
-                <h5>Product 2</h5>
-                <p>Another great product you will love.</p>
-              </div>
-            </div>
+            <img src="./images/banner2.jpg" class="d-block w-100" alt="..." />
           </div>
-
           <div class="carousel-item">
-            <div class="row justify-content-center">
-              <div class="col-md-4 text-center">
-                <img
-                  src="https://placehold.co/1200x400"
-                  class="d-block w-100 mb-3"
-                  alt="Product 3"
-                />
-                <h5>Product 3</h5>
-                <p>Best seller with excellent reviews.</p>
-              </div>
-            </div>
+            <img src="./images/banner3.jpg" class="d-block w-100" alt="..." />
           </div>
         </div>
-
-        <!-- Controls -->
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#productCarousel"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -105,7 +90,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#productCarousel"
+          data-bs-target="#carouselExampleCaptions"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -113,143 +98,393 @@
         </button>
       </div>
     </section>
+    <!-- ===== Slider HTML End -->
 
-    <!-- Hero -->
-    <header class="container text-center mb-5">
-      <div class="mb-4">
-        <img
-          src="https://placehold.co/1200x400"
-          alt="Banner"
-          class="img-fluid rounded w-100"
-        />
-      </div>
-    </header>
+    <!-- ===== Category HTML -->
+    <section class="category_section">
+      <div class="container">
+        <h2 class="mb-4">Categories</h2>
+        <div class="row g-3">
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">📱</div>
+              <h6 class="mt-2">Electronics</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">👗</div>
+              <h6 class="mt-2">Clothing</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🍔</div>
+              <h6 class="mt-2">Food</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">📚</div>
+              <h6 class="mt-2">Books</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🏠</div>
+              <h6 class="mt-2">Home</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">💻</div>
+              <h6 class="mt-2">Computers</h6>
+            </div>
+          </div>
 
-    <!-- Featured Products -->
-    <section class="container mb-5">
-      <h2 class="mb-4">Featured Products</h2>
-      <div class="row">
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
+          <!-- Second Row -->
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🎮</div>
+              <h6 class="mt-2">Games</h6>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🏋️‍♂️</div>
+              <h6 class="mt-2">Fitness</h6>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">💄</div>
+              <h6 class="mt-2">Beauty</h6>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🎧</div>
+              <h6 class="mt-2">Audio</h6>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🧸</div>
+              <h6 class="mt-2">Toys</h6>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/600x400"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$19.99</p>
-              <a href="#" class="btn btn-outline-primary w-100">Add to Cart</a>
+          <div class="col-md-2 col-sm-4 col-6">
+            <div class="card text-center category_card p-3">
+              <div class="category_icon">🚗</div>
+              <h6 class="mt-2">Automotive</h6>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ===== Category HTML End -->
 
-    <!-- Footer -->
+    <!-- ===== Feature Product HTML -->
+    <section class="feature_product">
+      <div class="container">
+        <!-- Title & Button -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Flash Sale</h2>
+          <a href="#" class="btn btn-outline-primary">See All Products</a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f1.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$59.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 120</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f2.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Stylish Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$39.99</p>
+                <div class="rating mb-1">★★★☆☆</div>
+                <div class="sold mb-2">Sold: 85</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f3.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  New Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$25.50</p>
+                <div class="rating mb-1">★★★★★</div>
+                <div class="sold mb-2">Sold: 210</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f4.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$19.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 150</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Feature Product HTML End -->
+
+    <!-- ===== Feature Product HTML -->
+    <section class="feature_product just_for_you">
+      <div class="container">
+        <h2 class="mb-4">Just For You</h2>
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f1.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$59.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 120</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f2.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Stylish Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$39.99</p>
+                <div class="rating mb-1">★★★☆☆</div>
+                <div class="sold mb-2">Sold: 85</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f3.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  New Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$25.50</p>
+                <div class="rating mb-1">★★★★★</div>
+                <div class="sold mb-2">Sold: 210</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/f4.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$19.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 150</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n1.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Full Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$59.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 120</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n2.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Stylish Full Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$39.99</p>
+                <div class="rating mb-1">★★★☆☆</div>
+                <div class="sold mb-2">Sold: 85</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n3.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  New Cotton Full Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$25.50</p>
+                <div class="rating mb-1">★★★★★</div>
+                <div class="sold mb-2">Sold: 210</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n4.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$19.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 150</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n5.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Full Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$59.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 120</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n6.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Stylish 3 Quarter Twill Fabrics Pant for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$39.99</p>
+                <div class="rating mb-1">★★★☆☆</div>
+                <div class="sold mb-2">Sold: 85</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n7.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  New Cotton Full Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$25.50</p>
+                <div class="rating mb-1">★★★★★</div>
+                <div class="sold mb-2">Sold: 210</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card product_card h-100">
+              <img src="images/n8.jpg" class="card-img-top" alt="Product" />
+              <div class="card-body">
+                <h6 class="card-title">
+                  Premium Cotton Half Sleeve Casual Shirt for Men
+                </h6>
+                <p class="text-danger fw-bold mb-1">$19.99</p>
+                <div class="rating mb-1">★★★★☆</div>
+                <div class="sold mb-2">Sold: 150</div>
+                <a href="cart.html" class="btn btn-sm btn-primary w-100"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Feature Product HTML End -->
+
+    <!-- ===== Footer HTML -->
     <footer class="bg-light py-4 border-top mt-auto">
       <div class="container text-center">
-        <p class="mb-0">&copy; 2025 ShopNow. All rights reserved.</p>
+        <p class="mb-0">Copyright &copy; 2025 ShopNow. All rights reserved.</p>
       </div>
     </footer>
+    <!-- ===== Footer HTML End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
